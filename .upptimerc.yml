@@ -1,36 +1,60 @@
-# Change these first
-owner: upptime # Your GitHub organization or username, where this repository lives
-repo: upptime # The name of this repository
+owner: cbtsite
+repo: status
+user-agent: cbtsite
 
 sites:
-  - name: Google
-    url: https://www.google.com
-  - name: Wikipedia
-    url: https://en.wikipedia.org
-  - name: Hacker News
-    url: https://news.ycombinator.com
-  - name: Test Broken Site
-    url: https://thissitedoesnotexist.koj.co
-  - name: IPv6 test
-    url: forwardemail.net
-    port: 80
+  - name: CBT Site
+    url: https://cbtsite.github.io
+  - name: CBT Online
+    icon: https://raw.githubusercontent.com/cbtsite/cbtsite.github.io/main/favicon-32x32.png
     check: "tcp-ping"
-    ipv6: true
+    url: sman8tamsel.com
+    port: 443
+  - name: Pusat Bantuan
+    url: http://cbtsite.tawk.help
+    icon: https://raw.githubusercontent.com/cbtsite/cbtsite.github.io/main/favicon-32x32.png
+  - name: "Mutaba'ah Online"
+    url: https://survey.sman8tamsel.com
+  - name: Ramadhan Bersahaja
+    url: https://ramadhan.sman8tamsel.com
+  - name: Analytics
+    url: https://io.sman8tamsel.com
+  - name: Mirrors
+    url: https://mirror.sman8tamsel.com
+  - name: SMTP endpoint
+    url: http://mail1.sman8tamsel.com
+  - name: LiveChat endpoint
+    url: http://tawk.to
+  - name: OpenVPN endpoint
+    check: "tcp-ping"
+    url: sman8tamsel.com
+    port: 1194
+    icon: https://openvpn.net/wp-content/uploads/cropped-openvpn-32x32.png
+  - name: IPInfo enpoint
+    url: https://ipinfo.io/json
+  - name: OpenAI endpoint
+    url: https://api.openai.com/v1/chat/completions
+    icon: https://cdn.oaistatic.com/_next/static/media/favicon-32x32.be48395e.png
+    expectedStatusCodes:
+      - 401
+  - name: Licensing endpoint
+    url: https://sl.sman8tamsel.com
 
 status-website:
-  # Add your custom domain name, or remove the `cname` line if you don't have a domain
-  # Uncomment the `baseUrl` line if you don't have a custom domain and add your repo name there
-  cname: demo.upptime.js.org
-  # baseUrl: /your-repo-name
-  logoUrl: https://raw.githubusercontent.com/upptime/upptime.js.org/master/static/img/icon.svg
-  name: Upptime
-  introTitle: "**Upptime** is the open-source uptime monitor and status page, powered entirely by GitHub."
-  introMessage: This is a sample status page which uses **real-time** data from our [GitHub repository](https://github.com/upptime/upptime). No server required — just GitHub Actions, Issues, and Pages. [**Get your own for free**](https://github.com/upptime/upptime)
+  baseUrl: /status
+  logoUrl: https://raw.githubusercontent.com/cbtsite/cbtsite.github.io/main/favicon-32x32.png
+  favicon: https://raw.githubusercontent.com/cbtsite/cbtsite.github.io/main/favicon-32x32.png
+  name: CBT Site - Status Layanan
+  theme: light
+  introTitle: "Status layanan pada server CBT Site"
+  introMessage: "Aplikasi monitoring layanan digital secara **real-time**. Pengecekan setiap 5 menit sekali."
   navbar:
-    - title: Status
-      href: /
-    - title: GitHub
-      href: https://github.com/$OWNER/$REPO
-
-# Upptime also supports notifications, assigning issues, and more
+    - title: Home
+      href: https://cbtsite.github.io
+  js: "window.navigation.addEventListener('navigate',e=>{setTimeout(()=>{document.querySelector('main section h1 a').removeAttribute('href')},1e3)}),window.addEventListener('load',e=>{setTimeout(()=>{document.querySelector('main section h1 a').removeAttribute('href')},2e3)}),window.navigation.addEventListener('navigate',e=>{setTimeout(()=>{document.querySelector('main section div.r p a').removeAttribute('href')},1e3)}),window.addEventListener('load',e=>{setTimeout(()=>{document.querySelector('main section div.r p a').removeAttribute('href')},2e3)});"
+  
+i18n:
+  footer: Aplikasi monitoring status layanan digital
+  incidentViewOnGitHub: Detail
+  
 # See https://upptime.js.org/docs/configuration
