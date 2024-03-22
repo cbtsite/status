@@ -58,9 +58,9 @@
     "url": "https://survey.sman8tamsel.com",
     "icon": "https://icons.duckduckgo.com/ip3/survey.sman8tamsel.com.ico",
     "slug": "mutaba-ah-online",
-    "status": "up",
+    "status": "down",
     "uptime": "100.00%",
-    "uptimeDay": "100.00%",
+    "uptimeDay": "99.98%",
     "uptimeWeek": "100.00%",
     "uptimeMonth": "100.00%",
     "uptimeYear": "100.00%",
@@ -69,7 +69,9 @@
     "timeWeek": 965,
     "timeMonth": 965,
     "timeYear": 965,
-    "dailyMinutesDown": {}
+    "dailyMinutesDown": {
+      "2024-03-22": 0
+    }
   },
   {
     "name": "Ramadhan Bersahaja",
